@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Currículum Vitae</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" id="logo" href="#inicio"></a>
+  <nav id="menu">
+    <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#educacion">Formación</a>
+    <a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a>
+  </nav>
+  <div class="acciones">
+    <button id="tema" aria-label="Cambiar tema">🌙</button>
+    <button id="menuBtn" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div>
+      <p class="saludo">¡Hola! Soy</p>
+      <h1 id="nombre"></h1>
+      <h2><span id="rol"></span><span class="cursor">|</span></h2>
+      <div class="botones">
+        <button id="descargar" class="btn">⬇ Descargar CV</button>
+        <a href="#contacto" class="btn ghost">Contáctame</a>
+      </div>
+    </div>
+    <div class="foto" id="foto"></div>
+  </section>
+
+  <section id="perfil" class="seccion reveal">
+    <h3>Sobre mí</h3>
+    <p id="resumen" class="resumen"></p>
+    <div id="datos" class="chips"></div>
+  </section>
+
+  <section id="experiencia" class="seccion reveal"><h3>Experiencia laboral</h3><div id="lista-exp" class="timeline"></div></section>
+
+  <section id="educacion" class="seccion reveal">
+    <h3>Formación académica</h3><div id="lista-edu" class="timeline"></div>
+    <h3 id="t-cursos" class="sub">Cursos y certificaciones</h3><div id="lista-cursos" class="timeline"></div>
+  </section>
+
+  <section id="habilidades" class="seccion reveal">
+    <h3>Habilidades</h3>
+    <div class="dos-col">
+      <div><h4>Técnicas</h4><div id="barras"></div></div>
+      <div><h4>Blandas</h4><div id="blandas" class="chips"></div><h4>Idiomas</h4><div id="idiomas"></div></div>
+    </div>
+  </section>
+
+
+  <section id="contacto" class="seccion reveal">
+    <h3>Contacto</h3><div id="contacto-lista" class="tarjetas"></div>
+  </section>
+</main>
+
+<footer>© <span id="anio"></span> <span id="pie"></span></footer>
+<button id="subir" aria-label="Subir">↑</button>
+
+<script src="js/datos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
